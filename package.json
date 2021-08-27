@@ -1,0 +1,36 @@
+{
+  "name": "@app/web",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
+    "build:parcel": "lerna run build:parcel --stream",
+    "build:ts": "lerna run build:ts --stream",
+    "watch": "lerna run watch --stream",
+    "start": "lerna run start --stream",
+    "clean": "rm -rf packages/*/.cache packages/*/dist"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.6",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "pg-native": "^3.0.0",
+    "typeorm": "^0.2.37"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "lerna": "^4.0.0",
+    "nodemon": "^2.0.12",
+    "parcel": "^2.0.0-rc.0",
+    "typescript": "^4.4.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

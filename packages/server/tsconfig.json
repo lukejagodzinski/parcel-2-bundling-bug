@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "ES2016",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    "lib": ["ESNext"],
+    "strict": true
+  },
+  "include": ["src/**/*.ts"],
+}

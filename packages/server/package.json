@@ -1,0 +1,25 @@
+{
+  "name": "@app/server",
+  "private": true,
+  "version": "1.0.0",
+  "targets": {
+    "app": {
+      "distDir": "dist",
+      "engines": {
+        "node": ">= 12"
+      },
+      "includeNodeModules": true,
+      "isLibrary": false
+    }
+  },
+  "scripts": {
+    "build:ts": "tsc",
+    "build:parcel": "parcel build ./src/index.ts --cache-dir .cache --no-optimize",
+    "watch": "parcel watch ./src/index.ts --cache-dir .cache --dist-dir dist",
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "@app/lib": "1.0.0"
+  },
+  "devDependencies": {}
+}

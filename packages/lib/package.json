@@ -1,0 +1,20 @@
+{
+  "name": "@app/lib",
+  "private": true,
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "source": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo \"No build\"",
+    "start": "echo \"No start\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"./src/**/*.{ts,tsx}\" --fix",
+    "ts:check": "tsc --noEmit",
+    "test": "jest --maxWorkers 2 --passWithNoTests",
+    "clean": "rm -rf .cache"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

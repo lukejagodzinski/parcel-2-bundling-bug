@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["packages/*/src"]
+    },
+    "strict": true,
+  },
+  "include": ["packages/*/src/**"],
+  "exclude": ["node_modules"]
+}
