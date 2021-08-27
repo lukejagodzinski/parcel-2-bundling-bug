@@ -1,4 +1,4 @@
-# Parcel 2 Bug
+# Parcel 2 Bundling Bug
 
 To run reproduction you have to:
 
